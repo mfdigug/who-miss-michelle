@@ -8,43 +8,86 @@
     </head>
     <body>
         <header>
-           
             <h1>Introducing Michelle</h1>
-            <!-- add img - float right -->
-             <!-- add nav -->
+
+            <div class="box">
+                <figure>
+                    <img id="cat" src="img/Me with my cat.jpg" alt="me with my cat">
+                    <figcaption>No cats were harmed in the making of this image</figcaption>
+                </figure>
+                <nav>
+                    <ul>
+                        <li><a href="#journey">My Journey</a></li>
+                        <li> <a href="#qualifications">My Qualifications</a></li>
+                        <li> <a href="#contact">Get in Touch</a></li>
+                    </ul>
+                </nav>  
+            </div> 
         </header>
         <main>
-            <h2>My journey</h2>
-            <p>I am a high school educator of 10 years, specialising in teaching English to senior students. I've recently decided to expand my skill set by learning how to code.</p>
+            <h2 id="Journey">My journey</h2>
 
-            <h2>My qualifications</h2>
+                <p>I am a high school teacher of 10 years, specialising in teaching English to senior students. I've recently decided to expand my skill set by learning how to code.</p>
 
-            <table>
-               <tr>
-                    <th>Year</th>
-                    <th>Qualification</th>
-                </tr>
+            <h2 id="qualifications">My qualifications</h2>
+
+                <table>
                 <tr>
-                    <td>2008</td>
-                    <td>High School</td>
-                </tr>
-                <tr>
-                    <td>2011</td>
-                    <td>Diploma of Music (Voice) </td>
-                </tr>
-                <tr>
-                    <td>2012</td>
-                    <td>Bachelor of Arts (with Honours)</td>
-                </tr>  
-                <tr>
-                    <td>2014</td>
-                    <td>Master of Teaching</td>
-                </tr> 
-            </table>
+                        <th>Year</th>
+                        <th>Qualification</th>
+                    </tr>
+                    <tr>
+                        <td>2008</td>
+                        <td>High School</td>
+                    </tr>
+                    <tr>
+                        <td>2011</td>
+                        <td>Diploma of Music (Voice) </td>
+                    </tr>
+                    <tr>
+                        <td>2012</td>
+                        <td>Bachelor of Arts (with Honours)</td>
+                    </tr>  
+                    <tr>
+                        <td>2014</td>
+                        <td>Master of Teaching</td>
+                    </tr> 
+                </table>
+       
+            <h3 id="contact">Get in touch</h3>
+                <form action="https://httpbin.org/post" method="post">
+                    <fieldset>
+                        <legend>Tell me about you</legend>
+                            <p>
+                                <label for="fullName">Full Name</label>
+                                <input type="text" id="fullName" name="fullName" placeholder="Enter Name" required>
+                            </p>
+                 
+                            <p>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="name@email.com">
+                            </p>
+                  
+                            <p>
+                                <label for="hobbies">Do you like...</label>
+                                <select name="hobbies" id="hobbies">
+                                <option value="Pina Coladas">piña coladas</option>
+                                <option value="Rain">getting caught in the rain</option>
+                                </select>
+                            </p>
+                         
+                            <p>
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" cols="20" rows="5">Enter Message</textarea>
+                            </p>
+                
+                            <button type="submit">submit</button>
+                    </fieldset>
+                </form>
         </main>
-        <footer>
-            <!-- contact info -->
-             <!-- form -->
+        <footer>   
+            <p>&lt;&lt;&lt; &copy; Michelle Di Guglielmo &gt;&gt;&gt;</p>
+            <p><a href="#">Back to Top</a></p>   
         </footer>
       
         <script src="script.js"></script>  
