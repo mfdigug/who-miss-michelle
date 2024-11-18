@@ -61,17 +61,20 @@ table {
 main {
     clear: both;
     text-align: center;
-    margin: 0, auto;
 }
 
 h2, h3 {
-    margin: 10px, auto;
+    margin: 10px auto;
     background-color: #cca0a0;
+}
+
+p {
+  margin: 10px 0;
 }
 
 footer {
     text-align: center;
-    margin: 10px, auto;
+    margin: 10px auto;
   }
 
 table {
